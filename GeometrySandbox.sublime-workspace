@@ -1,0 +1,484 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"FCo",
+				"FColor"
+			],
+			[
+				"FC",
+				"fColor"
+			],
+			[
+				"FL",
+				"FLinearColor"
+			],
+			[
+				"arr",
+				"ArrayLinearColor"
+			],
+			[
+				"A",
+				"ABaseGeometryActor"
+			],
+			[
+				"colorch",
+				"FColorChanger"
+			],
+			[
+				"uint",
+				"uint8"
+			],
+			[
+				"ui",
+				"uint32"
+			],
+			[
+				"Col",
+				"Color"
+			],
+			[
+				"GE",
+				"GENERATED_USTRUCT_BODY"
+			],
+			[
+				"cont",
+				"contain"
+			],
+			[
+				"T",
+				"TRUE"
+			],
+			[
+				"spe",
+				"specialarray"
+			],
+			[
+				"is",
+				"isRed"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Source/GeometrySandbox/Private/GeometryHubActor.cpp",
+			"settings":
+			{
+				"buffer_size": 569,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAAhAgAALy8gRmlsbCBvdXQgeW91ciBjb3B5cmlnaHQgbm90aWNlIGluIHRoZSBEZXNjcmlwdGlvbiBwYWdlIG9mIFByb2plY3QgU2V0dGluZ3MuCgoKI2luY2x1ZGUgIkdlb21ldHJ5SHViQWN0b3IuaCIKCi8vIFNldHMgZGVmYXVsdCB2YWx1ZXMKQUdlb21ldHJ5SHViQWN0b3I6OkFHZW9tZXRyeUh1YkFjdG9yKCkKewogCS8vIFNldCB0aGlzIGFjdG9yIHRvIGNhbGwgVGljaygpIGV2ZXJ5IGZyYW1lLiAgWW91IGNhbiB0dXJuIHRoaXMgb2ZmIHRvIGltcHJvdmUgcGVyZm9ybWFuY2UgaWYgeW91IGRvbid0IG5lZWQgaXQuCglQcmltYXJ5QWN0b3JUaWNrLmJDYW5FdmVyVGljayA9IHRydWU7Cgp9CgovLyBDYWxsZWQgd2hlbiB0aGUgZ2FtZSBzdGFydHMgb3Igd2hlbiBzcGF3bmVkCnZvaWQgQUdlb21ldHJ5SHViQWN0b3I6OkJlZ2luUGxheSgpCnsKCVN1cGVyOjpCZWdpblBsYXkoKTsKCQp9CgovLyBDYWxsZWQgZXZlcnkgZnJhbWUKdm9pZCBBR2VvbWV0cnlIdWJBY3Rvcjo6VGljayhmbG9hdCBEZWx0YVRpbWUpCnsKCVN1cGVyOjpUaWNrKERlbHRhVGltZSk7Cgp9CgoAAAAAAAAAAFoCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQEAAAAAAAC9AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAABaAgAALy8gRmlsbCBvdXQgeW91ciBjb3B5cmlnaHQgbm90aWNlIGluIHRoZSBEZXNjcmlwdGlvbiBwYWdlIG9mIFByb2plY3QgU2V0dGluZ3MuCgoKI2luY2x1ZGUgIkdlb21ldHJ5SHViQWN0b3IuaCIKI2luY2x1ZGUgIkVuZ2luZS9Xb3JsZC5oIgoKLy8gU2V0cyBkZWZhdWx0IHZhbHVlcwpBR2VvbWV0cnlIdWJBY3Rvcjo6QUdlb21ldHJ5SHViQWN0b3IoKQp7CiAJLy8gU2V0IHRoaXMgYWN0b3IgdG8gY2FsbCBUaWNrKCkgZXZlcnkgZnJhbWUuICBZb3UgY2FuIHR1cm4gdGhpcyBvZmYgdG8gaW1wcm92ZSBwZXJmb3JtYW5jZSBpZiB5b3UgZG9uJ3QgbmVlZCBpdC4KCVByaW1hcnlBY3RvclRpY2suYkNhbkV2ZXJUaWNrID0gdHJ1ZTsKCn0KCi8vIENhbGxlZCB3aGVuIHRoZSBnYW1lIHN0YXJ0cyBvciB3aGVuIHNwYXduZWQKdm9pZCBBR2VvbWV0cnlIdWJBY3Rvcjo6QmVnaW5QbGF5KCkKewoJU3VwZXI6OkJlZ2luUGxheSgpOwoKCVVXb3JsZCogV29ybGQgPSBHZXRXb3JsZCgpOwoKCQp9CgovLyBDYWxsZWQgZXZlcnkgZnJhbWUKdm9pZCBBR2VvbWV0cnlIdWJBY3Rvcjo6VGljayhmbG9hdCBEZWx0YVRpbWUpCnsKCVN1cGVyOjpUaWNrKERlbHRhVGltZSk7Cgp9CgoAAAAAAAAAADkCAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8QEAAAAAAADxAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n\n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n\n\n  Welcome to SublimeLinter, a linter framework for Sublime Text.\n\n  Linters are not included, they must be installed separately.\n  Get them from Package Control: https://packagecontrol.io/search/SublimeLinter\n\n\n  For complete documentation on how to use and configure SublimeLinter,\n  please see: http://www.sublimelinter.com\n\n  To report issues: https://github.com/SublimeLinter/SublimeLinter",
+			"settings":
+			{
+				"buffer_size": 802,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n\n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n\n\n  Welcome to SublimeLinter, a linter framework for Sublime Text.\n\n  Linters are not included, they must be installed separately.\n  Get them from Package Control: https://packagecontrol.io/search/SublimeLinter\n\n\n  For complete documentation on how to use and configure SublimeLinter,\n  please see: http://www.sublimelinter.com\n\n  To report issues: https://github.com/SublimeLinter/SublimeLinter"
+					},
+					"JgAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAzAAAAAAAAAAAAAAAzAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAQQAAAAAAAAAAAAAAQQAAAAAAAABOAAAAAAAAAAAAAABOAAAAAAAAAE8AAAAAAAAAAAAAAE8AAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABRAAAAAAAAAAAAAABRAAAAAAAAAIkAAAAAAAAAAAAAAIkAAAAAAAAAigAAAAAAAAAAAAAAigAAAAAAAADNAAAAAAAAAAAAAADNAAAAAAAAAM4AAAAAAAAAAAAAAM4AAAAAAAAAEgEAAAAAAAAAAAAAEgEAAAAAAAATAQAAAAAAAAAAAAATAQAAAAAAAFQBAAAAAAAAAAAAAFQBAAAAAAAAVQEAAAAAAAAAAAAAVQEAAAAAAACWAQAAAAAAAAAAAACWAQAAAAAAAJcBAAAAAAAAAAAAAJcBAAAAAAAAmAEAAAAAAAAAAAAAmAEAAAAAAACZAQAAAAAAAAAAAACZAQAAAAAAANkBAAAAAAAAAAAAANkBAAAAAAAA2gEAAAAAAAAAAAAA2gEAAAAAAADbAQAAAAAAAAAAAADbAQAAAAAAABkCAAAAAAAAAAAAABkCAAAAAAAAGgIAAAAAAAAAAAAAGgIAAAAAAABpAgAAAAAAAAAAAABpAgAAAAAAAGoCAAAAAAAAAAAAAGoCAAAAAAAAawIAAAAAAAAAAAAAawIAAAAAAABsAgAAAAAAAAAAAABsAgAAAAAAALMCAAAAAAAAAAAAALMCAAAAAAAAtAIAAAAAAAAAAAAAtAIAAAAAAADeAgAAAAAAAAAAAADeAgAAAAAAAN8CAAAAAAAAAAAAAN8CAAAAAAAA4AIAAAAAAAAAAAAA4AIAAAAAAAAiAwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Source/GeometrySandbox/Public/GeometryHubActor.h",
+			"settings":
+			{
+				"buffer_size": 546,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: Cancel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox",
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox/Private",
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox/Public"
+	],
+	"file_history":
+	[
+		"/C/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/Array.h",
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox/Private/BaseGeometryActor.cpp",
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox/Public/BaseGeometryActor.h",
+		"/C/Program Files/Epic Games/UE_4.26/Engine/Source/Developer/LogVisualizer/Private/VisualLoggerDatabase.h",
+		"/C/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h",
+		"/C/Users/20kin/AppData/Roaming/Sublime Text/Packages/UnrealScriptIDE/README.md",
+		"/C/Users/20kin/AppData/Roaming/Sublime Text/Packages/User/UnrealScriptIDE.sublime-settings",
+		"/D/UE/GeometrySandbox/Source/GeometrySandbox/GeometrySandbox.Build.cs",
+		"/C/Program Files/Epic Games/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h",
+		"/D/UE/GeometrySandbox/defines.txt",
+		"/C/Users/20kin/Desktop/_2lab.sage",
+		"/C/Users/20kin/Desktop/1lab.sage",
+		"/C/Users/20kin/Desktop/xml/warszawianka_Hygieia.xml",
+		"/C/Users/20kin/Desktop/xml/grapes.xml",
+		"/C/Users/20kin/Desktop/xml/ruby.xml",
+		"/C/Users/20kin/Downloads/all_mono1.c",
+		"/C/Users/20kin/AppData/LocalLow/Nolla_Games_Noita/save00/player.xml",
+		"/C/Users/20kin/AppData/LocalLow/Nolla_Games_Noita/save00/world_state.xml",
+		"/C/Users/20kin/Downloads/utlpwdmg.sql",
+		"/C/OSPanel/domains/dev.bx/HW/Dev/PHP. Многостраничный сайт/template/movieSnipped/movieSnipped.css",
+		"/C/Users/20kin/AppData/Local/Temp/Rar$DIa27260.17088/hw3.sql",
+		"/C/OSPanel/userdata/config/PHP_7.4_php.ini",
+		"/C/Users/20kin/Downloads/1_laba.ipynb",
+		"/C/Users/20kin/Downloads/GIF/GIF/Text Document.html",
+		"/C/Users/20kin/Documents/Qt/build-TTServerTcp-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/debug/ban.bin",
+		"/C/Users/20kin/Desktop/xml/liftarn_English_lawyer_early_20th_century.xml",
+		"/C/Users/20kin/Desktop/xml/liftarn_French_lawyer_early_20th_century.xml",
+		"/C/Users/20kin/Desktop/xml/warszawianka_Asklepios.xml",
+		"/C/Users/20kin/Desktop/xml/papapishu_Lyre.xml",
+		"/C/Users/20kin/Desktop/xml/warszawianka_toga_(clothing).xml",
+		"/C/Users/20kin/Desktop/xml/warszawianka_chiton_(clothing).xml",
+		"/C/Users/20kin/Desktop/xml/xmlred.xml",
+		"/C/Users/20kin/Documents/Qt/build-TTServerTcp-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/debug/ban.bmp",
+		"/C/Users/20kin/Downloads/FusionintheSun.svg",
+		"/C/Users/20kin/Downloads/all_gray.bmp",
+		"/C/Users/20kin/Documents/Qt/labs/5/build-5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/pin.bin",
+		"/C/Users/20kin/Documents/Qt/labs/5/build-5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/qwe.bin"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"SizeType",
+			"leng"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Source/GeometrySandbox/Private/GeometryHubActor.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "Source/GeometrySandbox/Public/GeometryHubActor.h",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.562953995157,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "GeometrySandbox.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
