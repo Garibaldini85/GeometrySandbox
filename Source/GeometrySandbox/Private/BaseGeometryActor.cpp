@@ -25,15 +25,11 @@ void ABaseGeometryActor::BeginPlay()
 {
 	Super::BeginPlay();
 	ColorChangerData.BeginPlay();
-	
+	UE_LOG(LogBaseGeometry, Error, TEXT("ArrayIntColor: %d %d"), ColorChangerData.ArrayIntColor.Num(), ColorChangerData.ArrayLinearColor.Num());
 	UE_LOG(LogBaseGeometry, Error, TEXT("Hello Unreal"));
 
 	InitialLocation = GetActorLocation();
-
-	uint32 iColor = 0x146152;
-	FColor fColor(iColor);
-	GeometryData.Color = FLinearColor(fColor);
-	SetColor(GeometryData.Color);
+	
 	//GetWorldTimerManager().SetTimer(TimerHandle, this, &ABaseGeometryActor::OnTimerFired, GeometryData.TimerRate, true);
 	GetWorldTimerManager().SetTimer(TimerColorChanger, this, &ABaseGeometryActor::OnTriggeredColorChanger, ColorChangerData.Interval / 1000000.0f, true);
 	//printStringTypes();
@@ -53,10 +49,10 @@ void ABaseGeometryActor::HandlerMovement()
 {
 	switch (GeometryData.MoveType) {
 		case EMovementType::Sin: {
-		//z = z0 + amplitude + sin(frec * t)
+		//z = z0 + amplitude * sin(frec * t)
 			FVector CurrentLocation = GetActorLocation();
-			float Time = GetWorld()->GetTimeSeconds();
-			CurrentLocation.Z = InitialLocation.Z + GeometryData.Amplitude + FMath::Sin(GeometryData.Frequency * Time);
+			const float Time = GetWorld()->GetTimeSeconds();
+			CurrentLocation.Z = InitialLocation.Z + GeometryData.Amplitude * FMath::Sin(GeometryData.Frequency * Time);
 
 			SetActorLocation(CurrentLocation);
 			break;
@@ -68,20 +64,27 @@ void ABaseGeometryActor::HandlerMovement()
 
 void ABaseGeometryActor::OnTimerFired()
 {
-	GeometryData.Color = FLinearColor::MakeRandomColor();
-	UE_LOG(LogBaseGeometry, Warning, TEXT("Color: %s"), *GeometryData.Color.ToString());
-	SetColor(GeometryData.Color);
+	// GeometryData.Color = FLinearColor::MakeRandomColor();
+	// UE_LOG(LogBaseGeometry, Warning, TEXT("Color: %s"), *GeometryData.Color.ToString());
+	// SetColor(GeometryData.Color);
 }
 
 void ABaseGeometryActor::OnTriggeredColorChanger()
 {
+	if (ColorChangerData.ArrayLinearColor.Num() == 1)
+	{ return;}
+	
 	ColorChangerData.CurrentStep = ColorChangerData.CurrentStep + ColorChangerData.Step;
-
+	if (ColorChangerData.IsLogging)
+		UE_LOG(LogBaseGeometry, Error, TEXT("%d %d %d %f %d"), ColorChangerData.Index, ColorChangerData.ReverseIndex, ColorChangerData.CurrentStep, ColorChangerData.CurrentStep < 0.0f);
+	
 	if (ColorChangerData.CurrentStep > 1.0f) {
 		ColorChangerData.Index = !ColorChangerData.ReverseIndex ? ColorChangerData.Index + 1 : ColorChangerData.Index - 1;
 		ColorChangerData.CurrentStep = 0.0f;
 	}
-
+	if (ColorChangerData.IsLogging)
+		UE_LOG(LogBaseGeometry, Error, TEXT("%d %d %d %f %d"), ColorChangerData.Index, ColorChangerData.ReverseIndex, ColorChangerData.CurrentStep, ColorChangerData.CurrentStep < 0.0f);
+	
 	if (ColorChangerData.Index >= ColorChangerData.ArrayLinearColor.Num() - 1 && !ColorChangerData.ReverseIndex) {
 		ColorChangerData.ReverseIndex = true;
 		ColorChangerData.Index = ColorChangerData.ArrayLinearColor.Num() - 1;
@@ -146,8 +149,8 @@ void ABaseGeometryActor::SetColor(const FLinearColor& Color)
 		UE_LOG(LogBaseGeometry, Warning, TEXT("New Color: %s"), *Color.ToString());
 
 	UMaterialInstanceDynamic* DynMaterial = BaseMesh->CreateAndSetMaterialInstanceDynamic(0);
-	if (DynMaterial) {
+	if (DynMaterial)
+	{
 		DynMaterial->SetVectorParameterValue("Color", Color);
 	}
 }
-

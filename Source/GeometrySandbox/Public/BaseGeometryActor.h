@@ -10,7 +10,8 @@ UENUM(BlueprintType)
 enum class EMovementType : uint8
 {
 	Sin,
-	Static
+	Static,
+	Undefined
 };
 
 USTRUCT(BlueprintType)
@@ -40,8 +41,8 @@ struct FColorChangerData
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, Category = "Timer")
-	uint32 Interval = 1000; //mcsec
-
+	uint32 Interval = 10000; //mcsec
+	
 	UPROPERTY(EditAnywhere, Category = "Timer")
 	float Step = 0.01f;
 
@@ -49,8 +50,8 @@ struct FColorChangerData
 	float CurrentStep = 0.0f;
 
 	UPROPERTY(EditAnywhere, Category = "Color")
-	//TArray<uint32> ArrayIntColor = { 0x000000, 0xffffff };
-	TArray<uint32> ArrayIntColor = {};
+	TArray<uint32> ArrayIntColor = { 0x000000, 0xffffff };
+	//TArray<uint32> ArrayIntColor = {};
 
 	UPROPERTY(BlueprintReadOnly)
 	TArray<FLinearColor> ArrayLinearColor;
@@ -64,10 +65,26 @@ struct FColorChangerData
 	UPROPERTY(EditAnywhere, Category = "Color")
 	bool IsLogging = false;
 
-	void BeginPlay() {
-		for (auto elem : ArrayIntColor) {
+	FColorChangerData()
+	{
+		for (auto elem: ArrayIntColor) {
 			ArrayLinearColor.Add(FLinearColor(FColor(elem)));
 		}
+	}
+	
+	void BeginPlay() {
+		if (ArrayIntColor.Num() <= 2)
+		{ return; }
+		TArray<FLinearColor> util;
+		
+		int begin = ArrayIntColor.Num() > 2 ? 2 : 0,
+			end = ArrayIntColor.Num();
+		
+		for (int i = begin; i < end; i++) {
+			util.Add(FLinearColor(FColor(ArrayIntColor[i])));
+		}
+
+		ArrayLinearColor = util;
 	}
 };
 
@@ -79,6 +96,16 @@ class GEOMETRYSANDBOX_API ABaseGeometryActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ABaseGeometryActor();
+
+	void SetColorChangerData (const FColorChangerData& Data)
+	{
+		ColorChangerData = Data;
+	}
+
+	void SetGeometryData (const FGeometryData& Data)
+	{
+		GeometryData = Data;
+	}
 
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* BaseMesh;
