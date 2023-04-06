@@ -1,6 +1,9 @@
 # Visual Studio 2015 user specific files
 .idea/
 .vs/
+*.sublime-project
+*.sublime-workspace
+
 
 # Compiled Object files
 *.slo
